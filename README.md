@@ -68,7 +68,7 @@ We are encouraging the talent students and partner professors among universities
 1. Go through the [**Topics**](#topics) and [**Golden Samples**](#Study-Note-Golden-Samples) sections for General information;
 2. Fill the [**internship submission Form**](https://forms.gle/2GBf4AinKrHY4jyVA);
 3. Send an email to Prof. Ray (crg@gapps.ntust.edu.tw) summarizing the following:
-    - Your comments for the **KEY concepts** that you learned from the [**Golden Samples**](#Study-Note-Golden-Samples).
+    - Your comments for the **KEY concepts** that you learned from the [**Golden Samples**](https://hackmd.io/AQym4FBjRvyRA8sk1d8KQw?view#Study-Note-Golden-Samples).
     - Your **LINE ID**.
     - Your **topic interest** & the **reason** why.
 4. Follow the [**General Rules for Intern**](#️-rules) during the internship.
