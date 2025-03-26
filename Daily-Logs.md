@@ -66,3 +66,17 @@
    - [Restarted gNB](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/UE_run_solved.png)
    - [Restarted UE](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/gNB_run_solved.png)
    - [Opened a new terminal specifically for ping test](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/Connectivity_RTT.png) -> ping successful marking that RTT is successful and connection between UE and gNB is established
+
+## 2025/03/26
+**Short-term Goals**
+1. Install OAI and do end-to-end test (rtt or round-test trip)
+   - [Set up OAI CN5G, gNB, and UE](https://gitlab.eurecom.fr/oai/openairinterface5g)
+   - [Test end-to-end connectivity](https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/README.md#tutorials)
+2. Create documentation of the process
+   - Update daily log, progress, and documentation to GitHub
+3. Draft IEEE document of the test
+   - Formatting document based on IEEE 
+
+**Daily Logs**:
+- 14.45-16.20 : Updating documents in GitHub
+- 16.21-17.30 : Drafting IEEE document
