@@ -46,14 +46,17 @@
 3. Draft IEEE document of the test
 
 **Daily Logs**:
-- 11.00-11.30 : [Set up CN5G pre-requisites, configurations, and docker images]()
-- 11.31-12.00 : [Build UHD and OAI gNB]()
-- 12.01-13.00 : [Run OAI CN5G and gNB]()
-- 13.01-13.30 : [Error due to no USRP device found]()
-- 13.31-14.00 : [Ran RFSimulator for gNB]()
-- 14.01-14.30 : [Tried running OAI UE with RFSimulator]()
-- 14.31-15.00 : [Error due to directory "./nr-uesoftmodem" not found]()
-- 15.01-15.30 : [Fixed error by renewing config file nrUE]()
+- 11.00-11.30 : Set up CN5G pre-requisites, configurations, and docker images
+   - [Set up CN5G docker](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/OAI_Setup/CN-5G_docker_pull.png)
+   - [Test run and start CN5G](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/OAI_Setup/CN-5G_startup.png)
+- 11.31-12.30 : Build UHD and OAI gNB
+   - [Build UHD from source and test](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/OAI_Setup/UHD_Build_test.png)
+   - [Build and test run gNB](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/OAI_Setup/gNB_test_run.png)
+- 13.00-13.30 : [Error due to no USRP device found](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/OAI_Setup/gNB_run_error.png)
+- 13.31-14.00 : [Ran RFSimulator for gNB](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/OAI_Setup/gNB_run_RFSim.png)
+- 14.01-15.30 : [Tried running OAI UE with RFSimulator](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/OAI_Setup/gNB_with_UE_initial_run.png)
+   - Initially found error from unspecified directory "./nr-uesoftmodem"
+   - [Fixed error by renewing config file nrUE]()
 - 15.31-16.00 : [Ran OAI UE with RFSimulator]()
 - 16.01-16.30 : [Ping error due to UE not starting up properly]()
 - 16.31-17.00 : [Fixed ping error by opening up new terminal for UE, ran end-to-end connectivity test]()
