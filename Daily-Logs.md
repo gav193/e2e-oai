@@ -47,7 +47,7 @@
 
 **Daily Logs**:
 - 11.00-11.30 : [Set up CN5G pre-requisites, configurations, and docker images]()
-- 10.01-12.00 : [Build UHD and OAI gNB]()
+- 11.31-12.00 : [Build UHD and OAI gNB]()
 - 12.01-13.00 : [Run OAI CN5G and gNB]()
 - 13.01-13.30 : [Error due to no USRP device found]()
 - 13.31-14.00 : [Ran RFSimulator for gNB]()
