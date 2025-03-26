@@ -65,4 +65,4 @@
 - 16.31-17.00 : Fixed ping error by opening up new terminal for UE, ran end-to-end connectivity test
    - [Restarted gNB](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/UE_run_solved.png)
    - [Restarted UE](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/gNB_run_solved.png)
-   - [Opened a new terminal specifically for ping test]([https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/connectivity_rtt.png](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/Connectivity_RTT.png)) -> ping successful marking that RTT is successful and connection between UE and gNB is established
+   - [Opened a new terminal specifically for ping test](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/Connectivity_RTT.png) -> ping successful marking that RTT is successful and connection between UE and gNB is established
