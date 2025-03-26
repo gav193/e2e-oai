@@ -36,7 +36,8 @@ cd ~/oai-cn5g
 docker compose pull
 ```
 
-## Operating OAI CN5G (use the functions according to what is needed)
+## Operating OAI CN5G 
+(use the functions according to what is needed)
 ```
 cd ~/oai-cn5g
 docker compose up -d  # to run CN5G
@@ -44,7 +45,8 @@ docker compose down   # to stop CN5G
 ```
 
 # OAI gNB and UE
-## Pre-requisites (build UHD from source)
+## Pre-requisites 
+(build UHD from source)
 ```
 # https://files.ettus.com/manual/page_build_guide.html
 sudo apt install -y autoconf automake build-essential ccache cmake cpufrequtils doxygen ethtool g++ git inetutils-tools libboost-all-dev libncurses-dev libusb-1.0-0 libusb-1.0-0-dev libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy python3-setuptools python3-ruamel.yaml
