@@ -9,7 +9,7 @@
 3. Draft IEEE document of the test
 
 **Daily Logs**:
-- 21.30-22.00 : Install Virtual Box (Goal 1 #Header_1 link)
+- 21.30-22.00 : Install Virtual Box (https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Virtual_Box_Installation.png)
 - 22.00-22.30 : Install Ubuntu and create a VM (Goal 1 #Header_2 link)
 
 ## 2025/03/23
