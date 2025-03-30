@@ -112,9 +112,9 @@
 3. Draft IEEE document of the test 
 
 **Daily Logs**:
-- 15.00-17.00 : Preparing to uplaod IEEE document on GitHub for documentation
+- 15.00-17.00 : Preparing to upload IEEE document on GitHub for documentation
 
-## 2025/03/30
+## 2025/03/31
 **Short-term Goals**
 1. Install OAI and do end-to-end test 
 2. Create documentation of the process
