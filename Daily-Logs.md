@@ -66,3 +66,59 @@
    - [Restarted gNB](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/UE_run_solved.png)
    - [Restarted UE](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/gNB_run_solved.png)
    - [Opened a new terminal specifically for ping test]([https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/connectivity_rtt.png](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/Connectivity_Test/Connectivity_RTT.png)) -> ping successful marking that RTT is successful and connection between UE and gNB is established
+
+## 2025/03/26
+**Short-term Goals**
+1. Install OAI and do end-to-end test 
+2. Create documentation of the process (in progress)
+3. Draft IEEE document of the test (in progress)
+
+**Daily Logs**:
+- 11.00-11.30 : Drafted outline for IEEE paper
+- 13.00-16.00 : Filtering references online for IEEE paper
+
+## 2025/03/27
+**Short-term Goals**
+1. Install OAI and do end-to-end test 
+2. Create documentation of the process (in progress)
+3. Draft IEEE document of the test (in progress)
+
+**Daily Logs**:
+- 13.00-17.00 : Worked on IEEE paper analysis and several other parts of the paper
+
+## 2025/03/28
+**Short-term Goals**
+1. Install OAI and do end-to-end test 
+2. Create documentation of the process (in progress)
+3. Draft IEEE document of the test (in progress)
+
+**Daily Logs**:
+- 13.00-15.00 : Researched online references and fixed formatting issues on IEEE paper
+- 15.01-17.00 : Finished initial rough draft of IEEE paper
+
+## 2025/03/29
+**Short-term Goals**
+1. Install OAI and do end-to-end test 
+2. Create documentation of the process (in progress)
+3. Draft IEEE document of the test (in progress)
+
+**Daily Logs**:
+- 13.00-15.00 : Finished IEEE paper documentation
+
+## 2025/03/30
+**Short-term Goals**
+1. Install OAI and do end-to-end test 
+2. Create documentation of the process (in progress)
+3. Draft IEEE document of the test 
+
+**Daily Logs**:
+- 15.00-17.00 : Preparing to uplaod IEEE document on GitHub for documentation
+
+## 2025/03/30
+**Short-term Goals**
+1. Install OAI and do end-to-end test 
+2. Create documentation of the process
+3. Draft IEEE document of the test 
+
+**Daily Logs**:
+- 04.00-04.10 : Uploaded IEEE document on GitHub
