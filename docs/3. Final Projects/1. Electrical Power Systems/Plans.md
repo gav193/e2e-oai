@@ -1,7 +1,7 @@
-# Study Notes
+# Electrical Power Systems Project Plans
+## 2025/05/07
+Team Distribution and Discussion
+- Read through given reference
+- Personal research on load flow analysis and short circuit analysis
 
-## Topic 1
-
-## Topic 2
-
-## Topic 3
+## 2025/05/10
