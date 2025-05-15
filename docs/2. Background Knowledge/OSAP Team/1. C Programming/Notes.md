@@ -7,7 +7,7 @@ A pointer is a variable that stores the **memory address** of another variable.
 In a sense, pointers **point** towards the said variable and creates a reference that can be especially useful in functions or other scenarios that needs indirect access of the variable itself. 
 
 Declaring a pointer (data_type* name)
-```int *ptr;\n```
+```int *ptr;/n```
 
 To initialize a pointer or to assign a value to the pointer, use the "&" operator to get the memory address of a variable (in this case 'var')
 ```int *ptr = &var;\n```
