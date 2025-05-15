@@ -1,4 +1,4 @@
-#BIOS Team Study Plan
+#OSAP Team Study Plan
 
 ## Week 1 : Foundations
 C/C++ review and practice
