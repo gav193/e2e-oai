@@ -44,9 +44,7 @@ A concept called constant pointers can be used to store a memory address within 
 Pointers can be used for callback or event-driven programs where functions can be passed as arguments and invoked dynamically. 
 Ex : we have an "add" function as such
 
-``` int add(int a, int b) ```
-
-```  {return a + b;} ```
+``` int add(int a, int b) {return a + b;} ```
 
 and we want to call it dynamically through a pointer (within main)
 
