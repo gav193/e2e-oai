@@ -26,18 +26,6 @@ Progress Report
 - Research on the aforementioned components and implementations
 - Continue on IEEE paper
 
-## 2025/05/18
-- Design circuit with sensors and its processing circuit
-
-## 2025/05/22
-- Test circuit design on a physical breadboard as a prototype
-- Analyze problems and what worked according to design
-
-## 2025/05/23
-- Find countermeasures for the problems found during prototyping
-- Simulate the new design
-
-## 2025/05/26 
-- Test new design prototype
-
-##
+## 2025/05/16
+- Research on circuit design with sensors and its processing circuit
+- Await for topic confirmation from professor
