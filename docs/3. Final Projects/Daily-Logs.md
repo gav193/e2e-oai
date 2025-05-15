@@ -121,4 +121,4 @@
 3. Draft IEEE document of the test 
 
 **Daily Logs**:
-- 04.00-04.10 : Uploaded IEEE document on GitHub
+- 04.00-04.10 : [Uploaded IEEE document on GitHub](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/1.%201st%20Probation%20Test%20oAI-RTT/e2e_paper_Gavin.pdf)
