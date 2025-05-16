@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9edcd12b-9c54-4aa2-9d1c-25b2ddd0cdd8)# Daily Logs
+# Daily Logs
 ## 2025/05/07
 **Short-term Goals**
 1. Read through given reference
@@ -26,7 +26,7 @@
 
 **Daily Logs**:
 - 12.00-13.00 : Create simulation file with MATLAB and import required assets
-- 16.00-21.00 : [Design power grid with given specifications](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/3.%20Final%20Projects/1.%20Electrical%20Power%20Systems/Screenshot%202025-05-15%20172310.png)
+- 16.00-21.00 : [Design power grid with given specifications](https://github.com/bmw-ece-ntust/internship/blob/2025-TEEP-8-Gavin/docs/3.%20Final%20Projects/1.%20Electrical%20Power%20Systems/Power-Grid-Design.png)
   - Unclear specifications with generator power generation leading to finding power value with trial-and-error
   - Unclear specifications with trafo and line parameters leading to same problem
   - Value on one of the loads are not specified and need to be detailed on next consultation with assistant
