@@ -64,7 +64,7 @@ Ex :
 ```int **ptr2 = &ptr1```
 
 ## Topic 2 : Memory Allocation
-Reference : [Dynamic Memory Allocation in C | GeeksForGeeks](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+Reference : [Dynamic Memory Allocation in C | GeeksforGeeks](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
 
 In C, variables defined inside functions are stored in stack memory with a fixed size (defined by compile time)
 Several functions that can be used within stdlib.h library are : 
@@ -96,8 +96,9 @@ As an example, the code below allocates memory to store 5 integers
 These memory allocation are useful in some scenarios, but might also prove to be prone to problems originating from memory leaks, dangling pointers, fragmentation, and allocation failure. Hence, it's important to make sure that pointers are set to a known address at all times and not overlap between memory allocation happen. 
 
 ## Topic 3 : File Handling
-Reference : [Basics of File Handling in C | GeeksForGeeks](https://www.geeksforgeeks.org/basics-file-handling-c/) 
+Reference : [Basics of File Handling in C | GeeksforGeeks](https://www.geeksforgeeks.org/basics-file-handling-c/) 
 
+### Basic functions
 Opening a file in C
 
 ```FILE* fopen(*file_name, *access_mode)```
@@ -150,4 +151,130 @@ fputs(data, fptr); // new text file with data written in it
 fclose(fptr);
 ```
 
-## Topic 4 : 
+### Processing files
+In C, there is a constant macro defined as "EOF" which marks the end of file being handled
+When reading a file, for example using getc(fptr) to read characters that fptr is pointing to, it will return the character being read from the file until an error occurs or the end of file is reached, where it will return the constant EOF.
+
+Another useful function is feof(fptr) that checks whether fptr has reached EOF or not by returning a value 0 when pointer doesn't point to EOF, but returns non-zero value when pointer reaches EOF.
+
+To read a file, the most common function used is fgets(). 
+```
+fgets(buffer, n, stream)
+```
+buffer acts as a pointer to a string buffer to store the read data
+n acts as the max number of characters to read (including null terminator)
+stream acts as the input stream
+Ex : 
+```
+FILE *fptr = fopen("filename.txt", "r");
+char data[50];
+fgets(data, sizeof(data), fptr); // fptr will be stored into data buffer
+fclose(fptr); 
+```
+
+To write content into a file, one of the common functions used is fprintf().
+```
+fprintf(FILE* fptr, const char *format, ...); 
+```
+fptr acts as a stream or a pointer to the file's location where the output will be written
+format acts as a string that specifies the format of the output
+"..." marks additional arguments that correspond to format specifiers
+Ex : 
+```
+int a = 1;
+int b = 2;
+FILE *fptr = fopen("filename.txt", "w");
+fprintf(fptr, "%d, %d\n", a, b); // write 1, 2 in the file
+fclose(fptr); 
+```
+
+### Parsing data 
+stdin can be read commonly with scanf() function which reads the given input from user according to the format specifier given. 
+Ex : 
+```
+int a;
+scanf("%d", &a); // stores stdin of an integer in the address of a
+```
+
+For file processing, the fscanf() function can also read and "extract" values from the file according to the format specifier.
+Ex : 
+```
+FILE *ptr = fopen("filename.txt", "r");
+char buffer[50];
+/* Contents of filename.txt
+   NAME    AGE   CITY
+   abc     12    hyderabad
+   bef     25    delhi
+   cce     65    bangalore */
+while(fscanf(ptr, "%*s %*s %s ", buffer) == 1){ // extracts only the last column as a string
+  printf("%s\n", buffer); // prints the last column values
+} 
+```
+
+One of the methods to parse data is to use tokens from the function strtok()
+```
+strtok(char *str, const char *delimiter);
+```
+str is the string that is being "parsed" which can be extracted using fgets if applied to an external file
+delimiter is the separator which we use to tokenize the string
+Ex : 
+```
+char str[] = "apples.pies.bananas";
+char delimiter[] = ".";
+char* token;
+token = strtok(str,delimiter);
+while (token) {
+  printf("%s\n", token); // prints segmented parts of the initial string
+  token = strtok(NULL, delimiter); // search from last point of token to a new delimiter
+}
+```
+Hence, when working with csv or similar files, such methods can be used to separate between lines and columns by adjusting the delimiters and boundaries of the token extraction.
+
+## Topic 4 : Structures
+Reference : [C Structures | GeeksforGeeks](https://www.geeksforgeeks.org/structures-c/)
+
+In C, a structure is a user-defined data type that can be used to group items of different types into one "struct". 
+To point to a specific member of a struct, it can be called with '.' on a defined and declared struct.
+```
+struct  A { // struct definition
+  int x;
+  char c;
+};
+int main() {
+  struct A a; // declaration of struct
+  a.x = 5; // stores value of integer 5 within x of A
+  return 0;
+}
+```
+
+Structs function the way most other variables and data types would as it can also be copied into other structs (of same type) and passed into a function as well.
+Another syntax to define a struct is with the typedef that sets an alias for an existing data type.
+```
+typedef struct {
+  int a;
+} str1;
+int main() {
+  str1 var1 = {10}; // does not need the "struct" data type attached to it
+  return 0;
+}
+```
+
+Struct pointer is a pointer that allows access to struct members using '->' instead of '.' 
+```
+struct Point {
+  int x, y;
+};
+int main() {
+  struct Point p = {1,2};
+  struct Point* ptr = &p;
+  printf("%d %d", ptr->x, ptr->y); 
+  return 0;
+}
+```
+This concept can be implemented for advanced and complex data structures such as linked lists, stacks, etc. Since a struct can contain a self-referring member : 
+```
+struct str {
+  int mem1;
+  struct str* next;
+};
+```
