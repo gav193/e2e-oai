@@ -1,7 +1,8 @@
 # Study Notes
 
 ## Topic 1 
-###[Windows Hardware and Drivers](https://learn.microsoft.com/en-us/windows-hardware/get-started/?view=windows-11)
+
+### [Windows Hardware and Drivers](https://learn.microsoft.com/en-us/windows-hardware/get-started/?view=windows-11)
 From the reference, it gives an overview about building, customizing, and deploying Windows 10 and Windows 11 devices along with its drivers. 
 Building and Customizing Windows Devices : 
 - Device development = selecting appropriate hardware components to meet both the minimum and optimal requirements
