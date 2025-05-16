@@ -48,7 +48,7 @@ Ex : we have an "add" function as such
 
 and we want to call it dynamically through a pointer (within main)
 
-``` int (*fptr)(int,int); #pointer declaration```
+``` int (*fptr)(int,int); //pointer declaration```
 
 ``` fptr = &add;\n ```
 
@@ -65,6 +65,7 @@ Ex :
 
 ## Topic 2 : Memory Allocation
 Reference : [Dynamic Memory Allocation in C | GeeksForGeeks](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+
 In C, variables defined inside functions are stored in stack memory with a fixed size (defined by compile time)
 Several functions that can be used within stdlib.h library are : 
 - malloc() to allocate a specified amount of uninitialized memory, returning a void pointer (must be cast)
@@ -94,4 +95,47 @@ As an example, the code below allocates memory to store 5 integers
 
 These memory allocation are useful in some scenarios, but might also prove to be prone to problems originating from memory leaks, dangling pointers, fragmentation, and allocation failure. Hence, it's important to make sure that pointers are set to a known address at all times and not overlap between memory allocation happen. 
 
-## Topic 3
+## Topic 3 : File Handling
+Reference : [Basics of File Handling in C | GeeksForGeeks](https://www.geeksforgeeks.org/basics-file-handling-c/) 
+
+Opening a file in C
+
+```FILE* fopen(*file_name, *access_mode)```
+
+file_name is a pointer that points to the name of the file specified
+There are several access_mode that are used in programs, the most common ones include : 
+- r : read mode, only able to read the contents of the file without modifying it
+- w : write mode, all contents in the file are overwritten then user can "write" in the file
+- a : append mode, read the contents of a file then enables user to "append" or write new contents that will later be added to the file
+if file is not found, 'r' will return a NULL but 'a' and 'w' will create a new file
+
+Reading from a file can be performed using these functions :
+- fscanf() : use formatted string and variable arguments to take input from a file
+- fgets() : reads whole line from file
+- fgetc() : reads a single character from file
+- fgetw() : reads a number from file
+- fread() : reads specified bytes from binary file (needs to be read with different mode such as 'rb')
+
+Closing a file can be done with the fclose() function. It's done to remove the memory allocated to the pointer to avoid bugs and faults.
+
+Ex : 
+``` 
+FILE* fptr;
+fptr = fopen("filename.txt", "r");
+
+char data[50];
+
+while(fgets(data,50,fptr) != NULL) {
+  printf("%s", data);
+}
+fclose(fptr);
+```
+
+Writing in a file can be oerformed with these functions :
+- fprintf() : uses formatted string and variable arguments to print output to a file
+- fputs() : prints whole line into a file with a newline at the end
+- fputc() : prints a single character into a file
+- fputw() : prints a number into a file
+- fwrite() : writes a specified number of bytes to binary file (needs to be accessed using access mode wb or ab)
+
+## Topic 4 : 
