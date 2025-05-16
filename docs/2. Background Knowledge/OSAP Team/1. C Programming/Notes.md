@@ -63,6 +63,35 @@ Ex :
 
 ```int **ptr2 = &ptr1```
 
-## Topic 2
+## Topic 2 : Memory Allocation
+Reference : [Dynamic Memory Allocation in C | GeeksForGeeks](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+In C, variables defined inside functions are stored in stack memory with a fixed size (defined by compile time)
+Several functions that can be used within stdlib.h library are : 
+- malloc() to allocate a specified amount of uninitialized memory, returning a void pointer (must be cast)
+As an example, the code below allocates memory to store 5 integers 
+
+```int *ptr = (int *)malloc(sizeof(int) * 5); ```
+
+-> However, values inside ptr need to be allocated by populating the array of 5 integers
+
+- calloc() to allocate memory and initialize as zero
+
+```int *ptr = (int *)calloc(5, sizeof(int));```
+
+-> same function as malloc but array of integers is initialized to 0
+
+- free() releases or frees allocated memory back to system (followed by setting pointer to NULL)
+
+```free(ptr); ```
+
+- realloc() resizes allocated memory block
+
+```ptr = (int *)malloc(5* sizeof(int)); ```
+
+```ptr = (int *)realloc(ptr, 10 * sizeof(int)); ```
+
+-> memory allocated in pointer is resized
+
+These memory allocation are useful in some scenarios, but might also prove to be prone to problems originating from memory leaks, dangling pointers, fragmentation, and allocation failure. Hence, it's important to make sure that pointers are set to a known address at all times and not overlap between memory allocation happen. 
 
 ## Topic 3
