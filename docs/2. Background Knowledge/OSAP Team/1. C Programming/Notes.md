@@ -138,4 +138,16 @@ Writing in a file can be oerformed with these functions :
 - fputw() : prints a number into a file
 - fwrite() : writes a specified number of bytes to binary file (needs to be accessed using access mode wb or ab)
 
+Ex : 
+``` 
+FILE* fptr;
+fptr = fopen("filename.txt", "w");
+
+char data[50] = "String to be written within file ";
+
+fputs(data, fptr); // new text file with data written in it
+
+fclose(fptr);
+```
+
 ## Topic 4 : 
