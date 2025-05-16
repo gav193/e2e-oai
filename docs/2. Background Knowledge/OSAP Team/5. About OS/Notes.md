@@ -23,7 +23,7 @@ Manufacturing and Deployment :
 - Image Customization = build customized Windows images tailored to speciic markets or needs
 - IoT Device Deployment = build and deployment of Windows IoT Core devices (including apps, drivers, settings)
 
-###[Windows Driver Kit (WDK) Documentation](https://learn.microsoft.com/en-us/windows-hardware/drivers/)
+### [Windows Driver Kit (WDK) Documentation](https://learn.microsoft.com/en-us/windows-hardware/drivers/)
 This documentation explains about the aim to design, develop, test, and deploy hardware and device drivers for Windows devices.
 Development Tools and Resources : 
 - Windows Driver Kit (WDK) = essential for building Windows drivers, integrates Visual Studio and provides headers, libraries, and tools necessary for driver development
